@@ -190,8 +190,9 @@
         .social-links { display: flex; gap: 1.5rem; }
         .social-links a { color: #fff; border: 1px solid rgba(255,255,255,0.2); width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s; }
         .social-links a:hover { background: var(--accent-green); border-color: var(--accent-green); transform: translateY(-3px); }
-        .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 2.5rem; font-size: 0.9rem; color: #aaa; text-transform: uppercase; letter-spacing: 1px; }
+        .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 2.5rem; font-size: 0.9rem; color: #aaa; text-transform: uppercase; letter-spacing: 1px; }
         
+
         @media (max-width: 1024px) {
             .gallery-wrap { grid-template-columns: 1fr; }
             .gallery-main-img { height: 500px; }
@@ -217,6 +218,7 @@
             section { padding: 5rem 5%; }
             .section-title { font-size: 2.5rem; }
             .section-subtitle { font-size: 2rem; }
+            .footer-bottom { justify-content: center; flex-direction: column; }
         }
     </style>
 </head>
@@ -323,9 +325,9 @@
                 <p class="menu-desc">Crispy tortillas baked with melted cheese, beans, jalapenos, and salsa.</p>
             </div>
             <div class="menu-card fade-in">
-                <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=600&auto=format&fit=crop" class="menu-item-img" alt="Pesto Pasta">
+                <img src="penne_pesto.png" class="menu-item-img" alt="Pesto Pasta">
                 <div class="menu-header"><span class="menu-title">Pesto Pasta</span><span class="menu-price">₹320</span></div>
-                <p class="menu-desc">Bowtie pasta in our vibrant, homemade basil pesto with cherry tomatoes.</p>
+                <p class="menu-desc">Penne in our vibrant, homemade basil pesto with cherry tomatoes.</p>
             </div>
             <div class="menu-card fade-in" style="transition-delay: 0.1s">
                 <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?q=80&w=600&auto=format&fit=crop" class="menu-item-img" alt="Chilaquiles">
@@ -451,7 +453,8 @@
             </div>
         </div>
         <div class="footer-bottom fade-in">
-            &copy; 2025 The House of Earthmonk. All rights reserved.
+            <span>&copy; 2026 The House of Earthmonk. All rights reserved.</span>
+            <span>Made by Harsh Tandel</span>
         </div>
     </footer>
 
